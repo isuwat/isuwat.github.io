@@ -10,3 +10,20 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+# side bar links
+sidebar-category:
+  - title: "카테고리"
+    children:
+      - title: "git guide"
+        url: "/categories/git"
+      - title: "query"
+        url: "/categories/query"
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
