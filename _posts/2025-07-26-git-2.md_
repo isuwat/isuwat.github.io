@@ -2,7 +2,7 @@
 title: "test"
 excerpt: "test post"
 categories:
-- Blog
+- git
 tags:
 - [Blog, jekyll, Git]
 sidebar:
@@ -11,8 +11,8 @@ sidebar:
 toc: true
 toc_sticky: true
 
-date: 2025-07-26
-last_modified_at: 2025-07-26
+date: 2025-07-29
+last_modified_at: 2025-07-29
 ---
 
 ```c++
