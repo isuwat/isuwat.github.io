@@ -2,7 +2,7 @@
 title: "test"
 excerpt: "test post"
 categories:
-- git
+- Blog
 tags:
 - [Blog, jekyll, Git]
 sidebar:
