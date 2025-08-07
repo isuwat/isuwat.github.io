@@ -15,10 +15,14 @@ main:
 sidebar-category:
   - title: "카테고리"
     children:
+      - title: "vim"
+        url: "/categories/vim"
       - title: "git guide"
         url: "/categories/git"
       - title: "query"
         url: "/categories/query"
+      - title: "web"
+        url: "/categories/web"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
