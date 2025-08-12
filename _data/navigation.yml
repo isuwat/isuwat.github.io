@@ -23,6 +23,9 @@ sidebar-category:
         url: "/categories/query"
       - title: "web"
         url: "/categories/web"
+      - title: "algorithm"
+        url: "/categories/algorithm"
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
