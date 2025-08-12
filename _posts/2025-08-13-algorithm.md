@@ -15,12 +15,12 @@ date: 2025-08-13
 last_modified_at: 2025-08-13
 ---
 
-##  ✨ C++ 알고리즘 기초 정리
+##   C++ 알고리즘 기초 정리
 
-### 1. 📚 알고리즘이란?
+### 1.  알고리즘이란?
 > 문제를 해결하기 위한 절차 또는 방법
 
-### 2. ✅ 기본 알고리즘 종류
+### 2.  기본 알고리즘 종류
 | 분류 | 알고리즘 예시 | 설명 |
 |------|----------------|------|
 | 정렬 | 선택, 버블, 삽입, 퀵, 병합, 힙 | 데이터를 순서대로 정렬 |
@@ -29,7 +29,7 @@ last_modified_at: 2025-08-13
 | 브루트포스 | 순열, 조합 | 모든 경우를 시도 |
 | 수학 | 소수 판별, 최대공약수(GCD), 최소공배수(LCM) | 수학적 문제 해결 알고리즘 |
 
-### 3. 🔢 정렬 예제 (버블 정렬)
+### 3.  정렬 예제 (버블 정렬)
 ```cpp
 void bubbleSort(vector<int>& arr) {
     int n = arr.size();
@@ -43,7 +43,7 @@ void bubbleSort(vector<int>& arr) {
 }
 ```
 ---
-### 4. 🔍 탐색 예제 (이진 탐색)
+### 4.  탐색 예제 (이진 탐색)
 ```cpp
 int binarySearch(vector<int>& arr, int target) {
     int left = 0, right = arr.size() - 1;
@@ -57,7 +57,7 @@ int binarySearch(vector<int>& arr, int target) {
 }
 ```
 ---
-### 5. 🧮 수학 알고리즘 예제 (최대공약수 GCD)
+### 5.  수학 알고리즘 예제 (최대공약수 GCD)
 ```cpp
 int gcd(int a, int b) {
     if (b == 0) return a;
@@ -67,7 +67,7 @@ int gcd(int a, int b) {
 * gcd(20,8) -> 4
 * C++17 이상에서는 std::gcd(a, b) 사용 가능
 
-### 6. 🔁 재귀 알고리즘 예제 (팩토리얼)
+### 6.  재귀 알고리즘 예제 (팩토리얼)
 ```cpp
 int factorial(int n) {
     if (n == 0) return 1;
@@ -75,7 +75,7 @@ int factorial(int n) {
 }
 ```
 
-### 7. 💡 브루트포스 예제 (모든 조합 출력)
+### 7.  브루트포스 예제 (모든 조합 출력)
 ```cpp
 #include <iostream>
 #include <vector>
@@ -90,18 +90,18 @@ int main() {
 }
 ```
 
-📚 추천 학습 순서
-1. ✅ C++ STL 기본 (vector, pair, sort 등)
+ 추천 학습 순서
+1.  C++ STL 기본 (vector, pair, sort 등)
 
-2. ✅ 정렬 알고리즘 직접 구현해보기
+2.  정렬 알고리즘 직접 구현해보기
 
-3. ✅ 탐색 알고리즘 (선형, 이진 탐색)
+3.  탐색 알고리즘 (선형, 이진 탐색)
 
-4. ✅ 수학적 알고리즘 (GCD, 소수)
+4.  수학적 알고리즘 (GCD, 소수)
 
-5. ✅ 재귀와 브루트포스
+5.  재귀와 브루트포스
 
-6. ✅ 문제로 실전 연습 시작 (백준, LeetCode 등)
+6.  문제로 실전 연습 시작 (백준, LeetCode 등)
 
 
 
