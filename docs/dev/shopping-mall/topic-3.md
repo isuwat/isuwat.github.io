@@ -30,7 +30,6 @@ ALTER TABLE orders
 ADD COLUMN product_total INT NOT NULL COMMENT '상품 합계 금액',
 ADD COLUMN shipping_fee INT NOT NULL COMMENT '배송비',
 ADD COLUMN total_payment INT NOT NULL COMMENT '최종 결제 금액 (상품합계 + 배송비)';
-
 ```
 
 ✅ 저장 시점
@@ -41,7 +40,6 @@ ADD COLUMN total_payment INT NOT NULL COMMENT '최종 결제 금액 (상품합�
 $product_total = array_sum(array_map(fn($item) => $item['quantity'] * $item['unit_price'], $order_items));
 $shipping_fee = ($product_total >= 50000) ? 0 : 3000;
 $total_payment = $product_total + $shipping_fee;
-
 ```
 
 ✅ UI에 표시 예시
@@ -52,5 +50,4 @@ $total_payment = $product_total + $shipping_fee;
   <tr><th>배송비</th><td><?= number_format($order['shipping_fee']) ?> 원</td></tr>
   <tr class="table-light fw-bold"><th>최종 결제금액</th><td><?= number_format($order['total_payment']) ?> 원</td></tr>
 </table>
-
 ```
