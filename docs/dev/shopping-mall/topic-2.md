@@ -3,7 +3,7 @@ layout: default
 title: "[db] 택배사"
 parent: shop
 grand_parent: Web
-nav_order: 1
+nav_order: 3
 ---
 
 # 쇼핑몰 택배사 테이블 설계

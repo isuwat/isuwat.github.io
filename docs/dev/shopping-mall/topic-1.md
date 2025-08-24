@@ -3,7 +3,7 @@ layout: default
 title: "[admin] 반품상세"
 parent: shop
 grand_parent: Web
-nav_order: 1
+nav_order: 2
 ---
 
 # 쇼핑몰 어드민 반품 상세 페이지 개발
