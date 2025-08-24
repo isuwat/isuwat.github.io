@@ -1,0 +1,37 @@
+/* 공통 코드블록 스타일 */
+div[class^="language-"].highlighter-rouge {
+  position: relative;
+  border-radius: 6px;
+  margin: 1.2em 0;
+  overflow: hidden;
+  padding: 1rem;       /* 기본 2rem(32px) → 1rem(16px) */
+  padding-top: 1rem;   /* 라벨 들어갈 공간만 확보 */
+}
+
+/* 라벨 스타일 */
+div[class^="language-"].highlighter-rouge::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.2em 0.6em;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 600;
+  background: #444;
+  color: #fff;
+  border-radius: 0 0 4px 0;
+  text-transform: uppercase;
+  opacity: 0.9;        /* 살짝 투명도 */
+}
+/* 언어별 라벨 (우선순위 강화 버전) */
+/* 언어별 라벨 (우선순위 강화 버전) */
+/* 언어별 라벨 */
+div.language-ruby.highlighter-rouge::before       { content: "RUBY"; background: #cc342d !important; color: #fff !important; }
+div.language-python.highlighter-rouge::before     { content: "PYTHON"; background: #3572A5 !important; color: #fff !important; }
+div.language-cpp.highlighter-rouge::before        { content: "C++"; background: #004482 !important; color: #fff !important; }
+div.language-php.highlighter-rouge::before        { content: "PHP"; background: #8892BF !important; color: #fff !important; }
+div.language-sql.highlighter-rouge::before        { content: "SQL"; background: #e38c00 !important; color: #fff !important; }
+div.language-mysql.highlighter-rouge::before      { content: "MYSQL"; background: #00618A !important; color: #fff !important; }
+div.language-html.highlighter-rouge::before       { content: "HTML"; background: #e34c26 !important; color: #fff !important; }
+div.language-css.highlighter-rouge::before        { content: "CSS"; background: #563d7c !important; color: #fff !important; }
+div.language-javascript.highlighter-rouge::before { content: "JS"; background: #f1e05a !important; color: #000 !important; }
