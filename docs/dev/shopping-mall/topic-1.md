@@ -8,7 +8,7 @@ nav_order: 1
 
 # 쇼핑몰 어드민 반품 상세 페이지 개발
 
-Here are admin detail page developmnet tips.
+Here are admin return detail page developmnet tips.
 
 ### 반품 관리 목록 페이지라면 사실상 대부분의 관리자 페이지가 그렇듯이:
 * 주문번호, 반품번호(return_id)
