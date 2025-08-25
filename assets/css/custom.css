@@ -20,18 +20,20 @@ div[class^="language-"].highlighter-rouge::before {
   background: #444;
   color: #fff;
   border-radius: 0 0 4px 0;
-  text-transform: uppercase;
+  text-transform: none;
   opacity: 0.9;        /* 살짝 투명도 */
 }
 /* 언어별 라벨 (우선순위 강화 버전) */
 /* 언어별 라벨 (우선순위 강화 버전) */
 /* 언어별 라벨 */
-div.language-ruby.highlighter-rouge::before       { content: "RUBY"; background: #cc342d !important; color: #fff !important; }
-div.language-python.highlighter-rouge::before     { content: "PYTHON"; background: #3572A5 !important; color: #fff !important; }
-div.language-cpp.highlighter-rouge::before        { content: "C++"; background: #004482 !important; color: #fff !important; }
-div.language-php.highlighter-rouge::before        { content: "PHP"; background: #8892BF !important; color: #fff !important; }
-div.language-sql.highlighter-rouge::before        { content: "SQL"; background: #e38c00 !important; color: #fff !important; }
-div.language-mysql.highlighter-rouge::before      { content: "MYSQL"; background: #00618A !important; color: #fff !important; }
-div.language-html.highlighter-rouge::before       { content: "HTML"; background: #e34c26 !important; color: #fff !important; }
-div.language-css.highlighter-rouge::before        { content: "CSS"; background: #563d7c !important; color: #fff !important; }
-div.language-javascript.highlighter-rouge::before { content: "JS"; background: #f1e05a !important; color: #000 !important; }
+div.language-ruby.highlighter-rouge::before       { content: "ruby"; background: #cc342d !important; color: #fff !important; }
+div.language-bash.highlighter-rouge::before       { content: "bash"; background: #89e051 !important; color: #fff !important; }
+div.language-yaml.highlighter-rouge::before       { content: "yaml"; background: #cb171e !important; color: #fff !important; }
+div.language-python.highlighter-rouge::before     { content: "python"; background: #3572A5 !important; color: #fff !important; }
+div.language-cpp.highlighter-rouge::before        { content: "c++"; background: #004482 !important; color: #fff !important; }
+div.language-php.highlighter-rouge::before        { content: "php"; background: #8892BF !important; color: #fff !important; }
+div.language-sql.highlighter-rouge::before        { content: "sql"; background: #e38c00 !important; color: #fff !important; }
+div.language-mysql.highlighter-rouge::before      { content: "mysql"; background: #00618A !important; color: #fff !important; }
+div.language-html.highlighter-rouge::before       { content: "html"; background: #e34c26 !important; color: #fff !important; }
+div.language-css.highlighter-rouge::before        { content: "css"; background: #563d7c !important; color: #fff !important; }
+div.language-javascript.highlighter-rouge::before { content: "js"; background: #f1e05a !important; color: #000 !important; }
