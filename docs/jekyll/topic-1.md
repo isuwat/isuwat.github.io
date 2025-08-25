@@ -61,5 +61,5 @@ bundle exec jekyll serve --config _config.yml,_config.dev.yml
 
 ## ⚡ 요약
 
-로컬 개발 → gem 기반 테마 (theme: just-the-docs)
+로컬 개발 → gem 기반 테마 (theme: just-the-docs)  
 배포(GitHub Pages) → 원격 테마 (remote_theme: just-the-docs/just-the-docs)
