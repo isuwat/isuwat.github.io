@@ -60,6 +60,7 @@ shop_products 테이블의 세 가지 가격 필드를 순서대로 체크합니
     DB 뷰에서 통일된 effective_price 값을 바로 조회할 수 있습니다.
 
 ### 4️⃣ 실제 예시
+
 |product_id | final_price | sale_price | buy_price | effective_price
 |---|---|---|---|---|
 P001       |   20000     |   25000    |   15000   | 20000   (final_price 사용)
