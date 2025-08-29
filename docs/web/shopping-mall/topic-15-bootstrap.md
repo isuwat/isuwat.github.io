@@ -39,11 +39,12 @@ require_once __DIR__ . '/../common/bootstrap.php';
 ```
 
 ### basket.php 안에서
+
 ```php
 require_once __DIR__ . '/../common/bootstrap.php';
 ```
-* __DIR__ = /var/www/html/order
 
+* __DIR__ = /var/www/html/order  
 * 따라서 실제 include 되는 경로 =  
   /var/www/html/order/../common/bootstrap.php → /var/www/html/common/bootstrap.php
 
@@ -52,17 +53,13 @@ require_once __DIR__ . '/../common/bootstrap.php';
 ### 📌 __DIR__의 장점
 
 1. 상대경로 오류 방지
-
-* 단순히 require '../common/bootstrap.php';라고 쓰면 현재 실행 위치에 따라 깨질 수 있음.
-
-* __DIR__를 쓰면 파일의 실제 물리적 위치를 기준으로 경로가 잡히므로 안전.
-
+  * 단순히 require '../common/bootstrap.php';라고 쓰면 현재 실행 위치에 따라 깨질 수 있음.
+  * __DIR__를 쓰면 파일의 실제 물리적 위치를 기준으로 경로가 잡히므로 안전.
 2. 유지보수 편리
-
-* 프로젝트 이동, 디렉터리 이름 변경에도 잘 동작.
+  * 프로젝트 이동, 디렉터리 이름 변경에도 잘 동작.
 
 ### ✅ 결론
-* __DIR__ = “이 PHP 파일이 있는 디렉터리 경로”  
+  * __DIR__ = “이 PHP 파일이 있는 디렉터리 경로”  
   그래서 require_once __DIR__ . '/../common/bootstrap.php';는  
   현재 파일의 디렉터리에서 한 단계 위로 올라가서 common/bootstrap.php를 불러라는 의미입니다.
 
@@ -70,7 +67,7 @@ require_once __DIR__ . '/../common/bootstrap.php';
 
 ### 2. 각 페이지에서 공통 파일 불러오기
 
-모든 페이지 최상단에서 부트스트랩을 require.
+* 모든 페이지 최상단에서 부트스트랩을 require.
 
 - **product/list.php, product/detail.php**
 
