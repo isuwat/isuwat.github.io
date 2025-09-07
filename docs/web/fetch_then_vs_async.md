@@ -2,7 +2,7 @@
 layout: default
 title: "[script] 비동기 요청"
 parent: Web
-nav_order: 5
+nav_order: 6
 ---
 
 # fetch + then vs fetch + async/await
