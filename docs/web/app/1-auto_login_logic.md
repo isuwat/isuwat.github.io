@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "[app] 자동 로그인 선택/해제"
-parent: Web
-nav_order: 4
+parent: app
+nav_order: 1
 ---
 
 # 자동 로그인 활성/비활성 로직 정리

@@ -3,7 +3,7 @@ layout: default
 title: shop
 parent: Web
 has_children: true
-nav_order: 1 
+nav_order: 2
 ---
 
 # 쇼핑몰 사이트 개발

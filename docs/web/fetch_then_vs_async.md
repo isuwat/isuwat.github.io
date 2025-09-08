@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "[script] 비동기 요청"
+title: "[js] 비동기 요청"
 parent: Web
 nav_order: 6
 ---
@@ -10,8 +10,27 @@ nav_order: 6
 JavaScript에서 비동기 요청을 처리하는 대표적인 두 가지 방식:
 - `fetch + then`
 - `fetch + async/await`
-
+fetch()는 Promise를 반환하며, .then()을 사용해 순차적으로 결과를 처리할 수 있습니다.
 결과적으로 같은 일을 하지만, 문법과 가독성, 예외 처리 방식 등에서 차이가 있습니다.
+
+### 기본 구조
+
+```js
+fetch('https://api.example.com/data')
+  .then(response => {
+    // 응답 객체를 처리
+    return response.json(); // JSON 형태로 파싱
+  })
+  .then(data => {
+    // 파싱된 데이터 사용
+    console.log(data);
+  })
+  .catch(error => {
+    // 오류 처리
+    console.error('에러 발생:', error);
+  });
+
+```
 
 ---
 
