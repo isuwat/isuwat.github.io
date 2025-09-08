@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Advanced
+title: Cheat Sheet
 parent: Docs
 has_children: true
 nav_order: 3
 ---
 
-# Advanced Section
+# Cheat Sheet Section
 
-This section contains advanced topics.
+This section contains Cheat Sheet topics.
