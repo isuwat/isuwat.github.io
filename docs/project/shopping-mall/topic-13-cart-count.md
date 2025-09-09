@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "[cart] 장바구니 담기 카운트"
+title: "[cart] 절대 경로 url_to()"
 parent: shop
 nav_order: 13
 ---
