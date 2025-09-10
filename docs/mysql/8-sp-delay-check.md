@@ -148,6 +148,7 @@ SHOW VARIABLES WHERE VARIABLE_NAME IN
 # 5) 샘플 성능 비교(애플리케이션 측)
 
 - 단건 반복:
+
 ```sql
 -- Autocommit ON에서
 INSERT INTO t(...) VALUES (...);  -- 매번 fsync
@@ -156,6 +157,7 @@ INSERT INTO t(...) VALUES (...);  -- 매번 fsync
     
        
 - 배치/준비된 문:
+
 ```sql
 START TRANSACTION;
 INSERT INTO t(col1,col2,...) VALUES 
