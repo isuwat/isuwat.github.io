@@ -146,6 +146,7 @@ ALTER TABLE voucher
 ## 5) 기타 마이너/유용한 팁
 
 - `NOW()`/`NOW(6)`를 **한 번 변수에 담아 재사용**(동일 트랜잭션 타임스탬프 보장 + 함수 호출 감소)
+
 ```sql
 SET v_now = NOW(6);
 ...
@@ -217,7 +218,6 @@ COMMIT;
 
 -- OUT 파라미터는 표시용으로 HEX 포맷을 돌려줄 수도 있음
 SET po_serial_code = UPPER(HEX(v_serial_code_bin));
-
 ```
 
 
