@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "[option] 옵션 핵심 코드 스케치
+title: "[option] 옵션 핵심 코드 스케치"
 parent: shop
 nav_order: 30
 ---

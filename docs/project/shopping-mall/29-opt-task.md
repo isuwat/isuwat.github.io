@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "[option] 옵션 작업(Task)
+title: "[option] 옵션 작업(Task)"
 parent: shop
 nav_order: 29
 ---
