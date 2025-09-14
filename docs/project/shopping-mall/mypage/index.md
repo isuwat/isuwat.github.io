@@ -1,0 +1,11 @@
+---
+layout: default
+title: mypage
+parent: shop
+has_children: true
+nav_order: 1
+---
+
+# 마이페이지 
+
+This section mypage topics.

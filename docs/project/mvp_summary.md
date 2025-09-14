@@ -2,7 +2,7 @@
 layout: default
 title: "[pattern] MVP 작업 패턴"
 parent: Project
-nav_order: 3
+nav_order: 4
 ---
 
 # MVP (Minimum Viable Product) 정리

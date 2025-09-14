@@ -1,12 +1,12 @@
 ---
 layout: default
-title: PHP include
+title: PHP require once
 parent: PHP
 nav_order: 4
 ---
 
 
-# include
+# require_once
 
 ## 1. `__DIR__` 기반 `require_once`
 
