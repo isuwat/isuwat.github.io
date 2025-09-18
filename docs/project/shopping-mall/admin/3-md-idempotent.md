@@ -2,7 +2,7 @@
 layout: default
 title: "[admin] MD 상태변경 멱등 처리"
 parent: admin
-nav_order: 1
+nav_order: 3
 ---
 
 

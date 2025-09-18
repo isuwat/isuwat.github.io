@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "[admin] 반품 테이블"
-parent: shop
-nav_order: 11
+parent: admin
+nav_order: 2
 ---
 
 # 반품관리 테이블 설계

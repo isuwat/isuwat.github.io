@@ -2,7 +2,7 @@
 layout: default
 title: "[admin] 주문상태 ENUM 필드 삭제"
 parent: admin
-nav_order: 2
+nav_order: 4
 ---
 
 # [DB] 주문상태 ENUM 필드 삭제 및 TINYINT 전환
