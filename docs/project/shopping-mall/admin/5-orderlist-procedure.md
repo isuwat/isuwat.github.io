@@ -163,3 +163,30 @@ LIMIT v_offset, v_limit;
     `COUNT(*)`, `GROUP_CONCAT(...)`, `SUBSTRING_INDEX(GROUP_CONCAT(...))`는 **모두 집계식**이므로 `GROUP BY`에 안 넣는 게 맞습니다.
     
 - 바깥 쿼리는 이미 **주문당 1행** 구조라 별도 `GROUP BY`가 필요 없고, 그래서 `ANY_VALUE()`도 제거해도 됩니다
+
+
+WHERE 절은 **각 `shop_orders` 행(= `ods`)에 대해 “이 주문에 이런 상품이 하나라도 있나?”를 검사**합니다.
+
+- `EXISTS ( … WHERE op2.order_seq_no = ods.seq_no AND op2.product_name LIKE … )`가 **참이면 그 주문(ods 행)이 결과에 포함**되고, 거짓이면 제외돼요.
+    
+- `pi_product_name`이 비어 있으면 앞의 `OR` 때문에 **무조건 통과**합니다.
+    
+
+즉, **EXISTS는 출력용이 아니라 필터**예요. 통과된 주문만 SELECT에 “표현”됩니다. (상품명 리스트를 화면에 보여주는 건 별도의 `agg.product_lines` 같은 집계 서브쿼리/컬럼이 담당합니다.)
+
+### 작동 요약(진리표)
+
+- `pi_product_name` = NULL/'' → 조건 전체 TRUE → 주문 **포함**
+    
+- `pi_product_name` = '키워드' AND 그 주문에 LIKE 매치 상품 ≥ 1 → **포함**
+    
+- `pi_product_name` = '키워드' AND 매치 없음 → **제외**
+    
+
+### 주의 메모
+
+- EXISTS는 **행 존재 여부**만 보니 “매치된 상품명”이 자동으로 표기되진 않습니다. 보기는 `product_lines` 같은 컬럼으로 처리하세요(보통은 주문의 **모든 상품**을 그대로 표시).
+    
+- 성능 위해 인덱스 권장: `shop_order_product (order_seq_no, product_name)`.
+    
+- 사용자가 `%`/`_`/`\`를 입력하면 LIKE가 과매치할 수 있으니 이스케이프(`ESCAPE '\\'`)를 고려하세요.
