@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 스토리 포인트
-parent: Jekyll
+parent: Jira
 nav_order: 2
 ---
 

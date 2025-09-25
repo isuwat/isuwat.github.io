@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 시간 추적
-parent: Jekyll
+parent: Jira
 nav_order: 3
 ---
 

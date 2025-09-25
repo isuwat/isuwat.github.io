@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 레이블
-parent: Jekyll
+parent: Jira
 nav_order: 1
 ---
 

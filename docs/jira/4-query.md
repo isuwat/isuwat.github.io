@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 검색 쿼리
-parent: Jekyll
+parent: Jira
 nav_order: 4
 ---
 
