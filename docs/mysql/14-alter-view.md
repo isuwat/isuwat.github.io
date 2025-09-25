@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "[MySQL] ALTER VIEW
+title: "[MySQL] ALTER VIEW"
 parent: MySQL
 nav_order: 14
 ---
