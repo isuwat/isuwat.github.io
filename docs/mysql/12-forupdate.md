@@ -45,7 +45,6 @@ FROM shop_cart c
 JOIN selected_ids s ON s.cart_id = c.cart_id
 WHERE c.user_id = pi_user_id
 FOR UPDATE;
-
 ```
 
 - `pi_cart_ids_json`으로 전달된 cart_id 들을 **조회하면서 잠금**을 거는 것.
