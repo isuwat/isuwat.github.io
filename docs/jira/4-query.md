@@ -18,19 +18,16 @@ project = ABC AND issuetype = Story AND statusCategory != Done ORDER BY updated 
 * 현재 스프린트의 스토리
 ```sql
 project = ABC AND issuetype = Story AND sprint in openSprints()
-
 ```
 
 * 특정 에픽에 속한 스토리
 ```sql
 project = ABC AND issuetype = Story AND "Epic Link" = ABC-123
-
 ```
 
 * 내게 할당된 스토리
 ```sql
 assignee = currentUser() AND issuetype = Story AND statusCategory != Done
-
 ```
 
 ## 어디서 설정?
