@@ -28,6 +28,7 @@ ALTER TABLE voucher ADD KEY ix_voucher_stat_regdate (stat, regdate);
 ```
 
 * 실제 적용
+
 ```sql
 -- 1. voucher index
 CREATE INDEX ix_voucher_user_regdate_seq
@@ -84,7 +85,6 @@ ELSE
 	...
   ) x;
 END IF;
-
 ```
 
 근거: 기존 CASE 기반 WHERE/정렬/리밋 구성.
