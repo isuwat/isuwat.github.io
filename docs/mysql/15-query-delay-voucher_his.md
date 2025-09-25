@@ -25,7 +25,6 @@ ON voucher (restore_user_id, regdate, seq_no);
 
 -- (선택) 상태별 최근순 조회 빈번하면
 ALTER TABLE voucher ADD KEY ix_voucher_stat_regdate (stat, regdate);
-
 ```
 
 * 실제 적용
