@@ -44,6 +44,7 @@ nav_order: 7
     - `shop_orders.courier_id` (택배사)
         
     - **신규** `shop_orders.vendor_order_no` (도매몰 주문번호)
+
 ```sql
 ALTER TABLE shop_orders
   ADD COLUMN vendor_order_no VARCHAR(64) NULL COMMENT '도매몰 주문번호' AFTER tracking_number,
@@ -78,8 +79,15 @@ ALTER TABLE shop_orders
 - 구현 포인트
     
     - 현재 상태/기존값을 **잠금 후 로컬 변수**로 취득:
-        
-        `SELECT order_status, tracking_number, vendor_order_no   INTO v_status, v_old_tracking, v_old_vendor_no FROM shop_orders WHERE seq_no = p_order_seq_no FOR UPDATE;`
+
+```sql
+SELECT order_status, tracking_number, vendor_order_no   
+INTO v_status, v_old_tracking, v_old_vendor_no 
+FROM shop_orders 
+WHERE seq_no = p_order_seq_no 
+FOR UPDATE;
+```
+
         
     - 로그 메시지에서 **컬럼 직접 비교 금지** → `v_old_*` 변수 사용
         
@@ -91,6 +99,7 @@ ALTER TABLE shop_orders
 ## API 라우팅(`/admin/api/md_order_proc.php`)
 
 - action 매핑
+
 ```sql
 $actionMap = [
   'md-confirm'   => 'md_confirm',
