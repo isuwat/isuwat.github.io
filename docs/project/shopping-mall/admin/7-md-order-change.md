@@ -122,6 +122,7 @@ $actionMap = [
     - `set-vendor`: `vendor_no`
         
 - CALL 예시
+
 ```php
 CALL update_adm_shop_order(:order_seq_no, :action, :value, :pd_seq_no, :courier_id, @rc, @msg);
 SELECT @rc rc, @msg msg;
@@ -161,6 +162,7 @@ SELECT @rc rc, @msg msg;
     - 송장/택배사: `<select.carrier> + <input.invoice> + <button data-act="tracking"> / <button data-act="md-invoice">`
         
 - 공용 핸들러(발췌)
+
 ```js
 $(document).on('click', '.md-actions [data-act]', async function(){
   const $btn = $(this), act = $btn.data('act'), oid = $btn.data('order-id');
