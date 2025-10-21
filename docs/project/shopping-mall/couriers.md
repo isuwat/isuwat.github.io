@@ -2,7 +2,7 @@
 layout: default
 title: "[db] 택배사"
 parent: shop
-nav_order: 12
+nav_order: 91
 ---
 
 # 쇼핑몰 택배사 테이블 설계

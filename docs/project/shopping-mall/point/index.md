@@ -1,9 +1,9 @@
 ---
 layout: default
-title: order
+title: point
 parent: shop
 has_children: true
-nav_order: 6
+nav_order: 7
 ---
 
 # 주문 프로세스

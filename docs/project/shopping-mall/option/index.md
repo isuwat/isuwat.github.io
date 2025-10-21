@@ -2,7 +2,7 @@
 layout: default
 title: option
 parent: shop
-nav_order: 91
+nav_order: 5
 ---
 
 # 상품 옵션 
